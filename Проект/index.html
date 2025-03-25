@@ -5,29 +5,34 @@
     </head>
     <body>
         <main>
-            <div class="container">
-                <iframe class="iframe1" src="article/test.html" title="Iframe Example" name="frame"></iframe>
-                <iframe style="display: none;" class="iframe2" src="article/test.html" title="Iframe Example" name="frame"></iframe>
-            </div>
-
-            <div class="console">
-                <div class="menu">
-                    <ul class="menu_u">
-                        <li><a href="https://colorscheme.ru/html-colors.html" target="frame">HEX</a></li>
-                        <li><a href="article/test.html" target="frame">Test</a></li>
-                        <li><a>&lt;h1&gt;</a></li>
-                        <li><button class="button1">Hello</button></li>
-                        <li><button class="button2">!Hello</button></li>
-                        <li><a>&lt;h2&gt;</a></li>
-                        <li><a>&lt;h3&gt;</a></li>
-                        <li><a>&lt;h4&gt;</a></li>
-                        <li><a>&lt;h5&gt;</a></li>
-                        <li><a>&lt;h6&gt;</a></li>
-                    </ul>
+            <section class="desktop">
+                <div class="container">
+                    <iframe class="area-main" src="article/test.html" title="Iframe main" name="frame-main"></iframe>
+                    <iframe class="area-additional" src="article/test.html" title="Iframe additional" name="frame-additional"></iframe>
+                    <iframe class="area-additional-top" src="article/test.html" title="Iframe additional" name="frame-additional-top"></iframe>
+                    <iframe class="area-additional-top-left" src="article/test.html" title="Iframe additional" name="frame-additional-topleft"></iframe>
                 </div>
-                <input type="text" name="text_console" list="Country_name">
-            </div>
-            <script src="js/main.js"></script>
+            </section>
+            <section class="console">
+                <div class="container">
+                    <div class="menu">
+                        <ul class="menu_list">
+                            <li><a href="https://colorscheme.ru/html-colors.html" target="frame">HEX</a></li>
+                            <li><a href="article/test.html" target="frame">Test</a></li>
+                            <li><a>&lt;h1&gt;</a></li>
+                            <li><button id="id1" class="buy-btn"><svg class="buy-svg" width="99" height="99" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="50" height="50" rx="18" stroke="black" stroke-width="9"/></svg></button></li>
+                            <li><button id="id2" class="buy-btn">!Hello</button></li>
+                            <li><a>&lt;h2&gt;</a></li>
+                            <li><a>&lt;h3&gt;</a></li>
+                            <li><a>&lt;h4&gt;</a></li>
+                            <li><a>&lt;h5&gt;</a></li>
+                            <li><a>&lt;h6&gt;</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" name="input_console">
+                </div>
+                <script src="js/main.js"></script>
+            </section>
         </main>
     </body>
 </html>
