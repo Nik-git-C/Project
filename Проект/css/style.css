@@ -6,30 +6,29 @@ body {
 :root {
     --iframe-width:99.7VW;
 }
-
+/*section desktop*/
 iframe {
     display:inline;
 }
 
-.iframe2 {
+.area-additional, .area-additional-top, .area-additional-top-left {
     display: none;
     height: 93VH;
     width: 49VW;
 }
 
-.container {
+.desktop .container {
     width: 100VW;
     height: 93VH;
     margin-bottom:2px;
 }
 
-
-.iframe1 {
+.area-main {
     width:var(--iframe-width);
     height: 93VH;
 }
-
-.console {
+/*section console*/
+.console .container {
     position: relative;
     width: 60VW;
 }
@@ -44,7 +43,15 @@ iframe {
     overflow-y: scroll;
 }
 
-input[name="text_console"] {
+.buy-btn {
+    border: none;
+    padding: 0;
+    background: LightGray;
+    color: grey;
+    font-size:2VH;
+}
+
+input[name="input_console"] {
     width: 60VW;
     height: 6VH;
     background: LightGray;
@@ -52,21 +59,21 @@ input[name="text_console"] {
     font-family: 'Cascadia Mono';
     font-size:4VH;
 }
-
-input[name="text_console"]:focus{
+/*Website working*/
+input[name="input_console"]:focus{
     outline: 0;
 }
 
-.console:hover > .menu {
+.console .container:hover > .menu {
     transform: scaleY(1);
 }
 
-.menu ul {
+.menu_list {
     margin:0;
     padding:0;
 }
 
-.menu li {
+.menu_list li {
     display: block;
     width: 25VW;
     height: 3VH;
@@ -74,11 +81,15 @@ input[name="text_console"]:focus{
     padding: 0VH 1VH 2VH 1VH;
 }
 
-.menu a {
+.menu_list a {
     text-decoration: none;
     color: grey;
 }
 
-.menu li:hover,a:hover {
+.menu_list li:hover,a:hover {
+    color: black;
+}
+
+.buy-btn:hover {
     color: black;
 }
