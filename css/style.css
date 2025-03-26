@@ -41,14 +41,20 @@ iframe {
     position: absolute;
     top: -14.9VH;
     overflow-y: scroll;
+    font-size:2VH;
 }
 
-.buy-btn {
+.btn {
     border: none;
     padding: 0;
     background: LightGray;
     color: grey;
     font-size:2VH;
+    cursor: pointer;
+}
+
+.svg {
+    margin-bottom: 10px;
 }
 
 input[name="input_console"] {
@@ -79,6 +85,7 @@ input[name="input_console"]:focus{
     height: 3VH;
     color: grey;
     padding: 0VH 1VH 2VH 1VH;
+    cursor: pointer;
 }
 
 .menu_list a {
@@ -90,6 +97,6 @@ input[name="input_console"]:focus{
     color: black;
 }
 
-.buy-btn:hover {
+.btn:hover {
     color: black;
 }
