@@ -68,25 +68,25 @@ button4.addEventListener('click', () => {
 })
 
 button5.addEventListener('click', () => {
-  for (let i = 1; i < links.length; i++) {
+  for (let i = 0; i < links.length; i++) {
     links[i].setAttribute('target', 'frame-main')
   }
 })
 
 button6.addEventListener('click', () => {
-  for (let i = 1; i < links.length; i++) {
+  for (let i = 0; i < links.length; i++) {
     links[i].setAttribute('target', 'frame-additional')
   }
 })
 
 button7.addEventListener('click', () => {
-  for (let i = 1; i < links.length; i++) {
+  for (let i = 0; i < links.length; i++) {
     links[i].setAttribute('target', 'frame-additional-top')
   }
 })
 
 button8.addEventListener('click', () => {
-  for (let i = 1; i < links.length; i++) {
+  for (let i = 0; i < links.length; i++) {
     links[i].setAttribute('target', 'frame-additional-topleft')
   }
 })
