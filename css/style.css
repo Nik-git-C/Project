@@ -1,115 +1,118 @@
 :root {
-    --iframe-width:99.7VW;
-    --background-all:LightGray;
-    --color-all:grey;
-    --color-all-hover:black;
+  --iframe-width: 99.7vw;
+  --background-all: LightGray;
+  --color-all: grey;
+  --color-all-hover: black;
 }
 
 body {
-    margin:0;
-    padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 /*section desktop*/
 
-.area-additional, .area-additional-top, .area-additional-top-left {
-    display: none;
-    height: 93VH;
-    width: 49VW;
+.area-additional,
+.area-additional-top,
+.area-additional-top-left {
+  display: none;
+  height: 93vh;
+  width: 49vw;
 }
 
 .desktop .container {
-    width: 100VW;
-    height: 93VH;
-    margin-bottom:2px;
+  width: 100vw;
+  height: 93vh;
+  margin-bottom: 2px;
 }
 
 .area-main {
-    width:var(--iframe-width);
-    height: 93VH;
+  width: var(--iframe-width);
+  height: 93vh;
 }
 /*section console*/
 .console .container {
-    position: relative;
-    width: 60VW;
+  position: relative;
+  width: 60vw;
 }
 
 .menu {
-    transform: scaleY(0);
-    width: 30VW;
-    height: 15VH;
-    background: var(--background-all);
-    position: absolute;
-    top: -14.9VH;
-    overflow-y: scroll;
-    font-size:2VH;
+  transform: scaleY(0);
+  width: 30vw;
+  height: 15vh;
+  background: var(--background-all);
+  position: absolute;
+  top: -14.9vh;
+  overflow-y: scroll;
+  font-size: 2vh;
 }
 
 .btn {
-    border: none;
-    padding: 0;
-    background: var(--background-all);
-    color: var(--color-all);
-    font-size:2VH;
-    cursor: pointer;
+  border: none;
+  padding: 0;
+  background: var(--background-all);
+  color: var(--color-all);
+  font-size: 2vh;
+  cursor: pointer;
 }
 
 .svg-rect {
-    stroke:var(--color-all)
+  stroke: var(--color-all);
 }
 
 .svg-rect-fill {
-    fill:var(--color-all);
+  fill: var(--color-all);
 }
 
-input[name="input_console"] {
-    width: 60VW;
-    height: 6VH;
-    background: var(--background-all);
-    border: none;
-    font-family: 'Cascadia Mono';
-    font-size:4VH;
+input[name='input_console'] {
+  width: 60vw;
+  height: 6vh;
+  background: var(--background-all);
+  border: none;
+  font-family: 'Cascadia Mono';
+  font-size: 4vh;
 }
 /*Website working*/
-input[name="input_console"]:focus{
-    outline: 0;
+input[name='input_console']:focus {
+  outline: 0;
 }
 
 .console .container:hover > .menu {
-    transform: scaleY(1);
+  transform: scaleY(1);
 }
 
 .menu_list {
-    margin:0;
-    padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .menu_list li {
-    display: block;
-    width: 25VW;
-    height: 3VH;
-    color: var(--color-all);
-    padding: 0VH 1VH 2VH 1VH;
-    cursor: pointer;
+  display: block;
+  width: 25vw;
+  height: 3vh;
+  color: var(--color-all);
+  padding: 0vh 1vh 2vh 1vh;
+  cursor: pointer;
 }
 
 .menu_list a {
-    text-decoration: none;
-    color: var(--color-all);
+  text-decoration: none;
+  color: var(--color-all);
 }
 
-.menu_list li:hover,a:hover {
-    color:var(--color-all-hover);;
+.menu_list li:hover,
+a:hover {
+  color: var(--color-all-hover);
 }
 
 .btn:hover {
-    color:var(--color-all-hover);;
+  color: var(--color-all-hover);
 }
 
 .svg:hover .svg-rect {
-    stroke:var(--color-all-hover);
+  stroke: var(--color-all-hover);
 }
 
 .svg:hover .svg-rect-fill {
-    fill:var(--color-all-hover);
+  fill: var(--color-all-hover);
 }

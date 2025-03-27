@@ -1,44 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <main>
-            <section class="desktop">
-                <div class="container">
-                    <iframe class="area-additional-top-left" src="article/test.html" title="Iframe additional" name="frame-additional-topleft"></iframe>
-                    <iframe class="area-additional-top" src="article/test.html" title="Iframe additional" name="frame-additional-top"></iframe>
-                    <iframe class="area-main" src="article/test.html" title="Iframe main" name="frame-main"></iframe>
-                    <iframe class="area-additional" src="article/test.html" title="Iframe additional" name="frame-additional"></iframe>
-                </div>
-            </section>
-            <section class="console">
-                <div class="container">
-                    <div class="menu">
-                        <ul class="menu_list">
-                            <li><a href="https://colorscheme.ru/html-colors.html" target="frame-main">HEX</a></li>
-                            <li><a href="article/test.html" target="frame-main">Test</a></li>
-                            <li><a>&lt;h1&gt;</a></li>
-                            <li><button id="id1" class="btn"><svg class="svg" width="50" height="50" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg"><rect class="svg-rect" x="4" y="4" width="50" height="50" rx="18" stroke="grey" stroke-width="9"/></svg></button></li>
-                            <li><button id="id2" class="btn"><svg class="svg" width="50" height="50" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg"><rect class="svg-rect" x="4" y="4" width="50" height="50" rx="18" stroke="grey" stroke-width="8"/><rect class="svg-rect svg-rect-fill" x="24" y="7" width="10" height="50" fill="grey"/></svg></button></li>
-                            <li><button id="id3" class="btn"><svg class="svg" width="50" height="50" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg"><rect class="svg-rect" x="4" y="4" width="50" height="50" rx="18" stroke="grey" stroke-width="8"/><rect class="svg-rect svg-rect-fill" x="24" y="24" width="10" height="29" fill="grey"/><rect class="svg-rect svg-rect-fill" x="82" y="71" width="10" height="55" transform="rotate(90 92 34)" fill="grey"/></svg></button></li>
-                            <li><button id="id4" class="btn"><svg class="svg" width="50" height="50" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg"><rect class="svg-rect" x="4" y="4" width="50" height="50" rx="18" stroke="grey" stroke-width="8"/><rect class="svg-rect svg-rect-fill" x="24" y="8" width="10" height="50" fill="grey"/><rect class="svg-rect svg-rect-fill" x="72" y="80" width="10" height="50" transform="rotate(90 92 45)" fill="grey"/></svg></button></li>
-                            <li><button id="id5" class="btn">Обратится к frame 1</button></li>
-                            <li><button id="id6" class="btn">Обратится к frame 2</button></li>
-                            <li><button id="id7" class="btn">Обратится к frame 3</button></li>
-                            <li><button id="id8" class="btn">Обратится к frame 4</button></li>
-                            <li><a>&lt;h2&gt;</a></li>
-                            <li><a>&lt;h3&gt;</a></li>
-                            <li><a>&lt;h4&gt;</a></li>
-                            <li><a>&lt;h5&gt;</a></li>
-                            <li><a>&lt;h6&gt;</a></li>
-                        </ul>
-                    </div>
-                    <input type="text" name="input_console">
-                </div>
-                <script src="js/main.js"></script>
-            </section>
-        </main>
-    </body>
+  <head>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section class="desktop">
+        <div class="container">
+          <iframe class="area-additional-top-left" src="article/test.html" title="Iframe additional" name="frame-additional-topleft"></iframe>
+          <iframe class="area-additional-top" src="article/test.html" title="Iframe additional" name="frame-additional-top"></iframe>
+          <iframe class="area-main" src="article/test.html" title="Iframe main" name="frame-main"></iframe>
+          <iframe class="area-additional" src="article/test.html" title="Iframe additional" name="frame-additional"></iframe>
+        </div>
+      </section>
+      <section class="console">
+        <div class="container">
+          <div class="menu">
+            <ul class="menu_list">
+              <li>
+                <a href="https://colorscheme.ru/html-colors.html" target="frame-main">HEX</a>
+              </li>
+              <li>
+                <a href="article/test.html" target="frame-main">Test</a>
+              </li>
+              <li>
+                <a>&lt;h1&gt;</a>
+              </li>
+              <li>
+                <button id="id1" class="btn">
+                  <svg class="svg" width="50" height="50" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="svg-rect" x="4" y="4" width="50" height="50" rx="18" stroke="grey" stroke-width="9" />
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button id="id2" class="btn">
+                  <svg class="svg" width="50" height="50" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="svg-rect" x="4" y="4" width="50" height="50" rx="18" stroke="grey" stroke-width="8" />
+                    <rect class="svg-rect svg-rect-fill" x="24" y="7" width="10" height="50" fill="grey" />
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button id="id3" class="btn">
+                  <svg class="svg" width="50" height="50" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="svg-rect" x="4" y="4" width="50" height="50" rx="18" stroke="grey" stroke-width="8" />
+                    <rect class="svg-rect svg-rect-fill" x="24" y="24" width="10" height="29" fill="grey" />
+                    <rect class="svg-rect svg-rect-fill" x="82" y="71" width="10" height="55" transform="rotate(90 92 34)" fill="grey" />
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button id="id4" class="btn">
+                  <svg class="svg" width="50" height="50" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="svg-rect" x="4" y="4" width="50" height="50" rx="18" stroke="grey" stroke-width="8" />
+                    <rect class="svg-rect svg-rect-fill" x="24" y="8" width="10" height="50" fill="grey" />
+                    <rect class="svg-rect svg-rect-fill" x="72" y="80" width="10" height="50" transform="rotate(90 92 45)" fill="grey" />
+                  </svg>
+                </button>
+              </li>
+              <li><button id="id5" class="btn">Обратится к frame 1</button></li>
+              <li><button id="id6" class="btn">Обратится к frame 2</button></li>
+              <li><button id="id7" class="btn">Обратится к frame 3</button></li>
+              <li><button id="id8" class="btn">Обратится к frame 4</button></li>
+              <li><a>&lt;h2&gt;</a></li>
+              <li><a>&lt;h3&gt;</a></li>
+              <li><a>&lt;h4&gt;</a></li>
+              <li><a>&lt;h5&gt;</a></li>
+              <li><a>&lt;h6&gt;</a></li>
+            </ul>
+          </div>
+          <input type="text" name="input_console" />
+        </div>
+        <script src="js/main.js"></script>
+      </section>
+    </main>
+  </body>
 </html>
