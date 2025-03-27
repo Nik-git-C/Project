@@ -62,11 +62,21 @@ button4.addEventListener('click', () => {
 });
 
 const button5 = document.querySelector('#id5')
-button5.addEventListener('click', () => {
+button5.addEventListener('click', () => { // сделать функцию в которой атрибут target всех тегов <a> применит значение на frame-main
         elementA.setAttribute('target','frame-main')
 });
 
 const button6 = document.querySelector('#id6')
-button6.addEventListener('click', () => {
+button6.addEventListener('click', () => { // сделать функцию в которой атрибут target всех тегов <a> применит значение на frame-additional
         elementA.setAttribute('target','frame-additional')
+});
+
+const button7 = document.querySelector('#id7')
+button7.addEventListener('click', () => { // сделать функцию в которой атрибут target всех тегов <a> применит значение на frame-additional-top
+        elementA.setAttribute('target','frame-additional-top')
+});
+
+const button8 = document.querySelector('#id8')
+button8.addEventListener('click', () => { // сделать функцию в которой атрибут target всех тегов <a> применит значение на frame-additional-topleft
+        elementA.setAttribute('target','frame-additional-topleft')
 });
