@@ -1,11 +1,15 @@
+:root {
+    --iframe-width:99.7VW;
+    --background-all:LightGray;
+    --color-all:grey;
+    --color-all-hover:black;
+}
+
 body {
     margin:0;
     padding:0;
 }
 
-:root {
-    --iframe-width:99.7VW;
-}
 /*section desktop*/
 iframe {
     display:inline;
@@ -37,7 +41,7 @@ iframe {
     transform: scaleY(0);
     width: 30VW;
     height: 15VH;
-    background: LightGray;
+    background: var(--background-all);
     position: absolute;
     top: -14.9VH;
     overflow-y: scroll;
@@ -47,16 +51,24 @@ iframe {
 .btn {
     border: none;
     padding: 0;
-    background: LightGray;
-    color: grey;
+    background: var(--background-all);
+    color: var(--color-all);
     font-size:2VH;
     cursor: pointer;
+}
+
+.svg-rect {
+    stroke:var(--color-all)
+}
+
+.svg-rect-fill {
+    fill:var(--color-all);
 }
 
 input[name="input_console"] {
     width: 60VW;
     height: 6VH;
-    background: LightGray;
+    background: var(--background-all);
     border: none;
     font-family: 'Cascadia Mono';
     font-size:4VH;
@@ -79,20 +91,28 @@ input[name="input_console"]:focus{
     display: block;
     width: 25VW;
     height: 3VH;
-    color: grey;
+    color: var(--color-all);
     padding: 0VH 1VH 2VH 1VH;
     cursor: pointer;
 }
 
 .menu_list a {
     text-decoration: none;
-    color: grey;
+    color: var(--color-all);
 }
 
 .menu_list li:hover,a:hover {
-    color: black;
+    color:var(--color-all-hover);;
 }
 
 .btn:hover {
-    color: black;
+    color:var(--color-all-hover);;
+}
+
+.svg:hover .svg-rect {
+    stroke:var(--color-all-hover);
+}
+
+.svg:hover .svg-rect-fill {
+    fill:var(--color-all-hover);
 }
