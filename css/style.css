@@ -53,10 +53,6 @@ iframe {
     cursor: pointer;
 }
 
-.svg {
-    margin-bottom: 10px;
-}
-
 input[name="input_console"] {
     width: 60VW;
     height: 6VH;
