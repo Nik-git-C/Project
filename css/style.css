@@ -11,9 +11,6 @@ body {
 }
 
 /*section desktop*/
-iframe {
-    display:inline;
-}
 
 .area-additional, .area-additional-top, .area-additional-top-left {
     display: none;
