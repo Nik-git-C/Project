@@ -1,15 +1,64 @@
+body {
+    margin: 0;
+}
+
 .header {
-    background: rgba(255, 106, 0, 0.65);
+    background: rgb(255, 106, 0, 0.65);
 }
 
 .nav {
-    background: rgba(255, 216, 0, 0.65);
+    background: rgb(255, 216, 0, 0.65);
 }
 
 .main {
-    background: rgba(76, 255, 0, 0.65);
+    background: rgb(76, 255, 0, 0.65);
 }
 
 .footer {
-    background: rgba(76, 255, 0, 0.65);
+    background: rgba(0, 238, 255, 0.65);
+}
+
+p {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.areacode-images {
+    background: white;
+    border-style: inset;
+    height: 400px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    >div {
+        border: 2px dotted;
+        background: #f9cc9d;
+        height: 160px;
+        width: 300px;
+        >div {
+            border: 1px solid;
+            margin: 0;
+            margin-left: 25px;
+            background: #fddd9b;
+            height: 100px;
+            width: 250px;
+            >div {
+                border: 2px dotted;
+                margin: 0;
+                margin-left: 25px;
+                background: #c3d08b;
+                width: 200px;
+                height: 60px;
+                >div {
+                    border: 1px solid;
+                    margin: 0;
+                    margin-left: 25px;
+                    background: #8cb6c0;
+                    width: 150px;
+                }
+            }
+        }
+    }
 }
