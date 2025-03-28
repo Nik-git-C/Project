@@ -1,15 +1,15 @@
 .header {
-    background: rgb(255, 106, 0, 0,65);
+    background: rgba(255, 106, 0, 0.65);
 }
 
 .nav {
-    background: rgb(255, 216, 0, 0,65);
+    background: rgba(255, 216, 0, 0.65);
 }
 
 .main {
-    background: rgb(76, 255, 0, 0,65);
+    background: rgba(76, 255, 0, 0.65);
 }
 
 .footer {
-    background: rgb(76, 255, 0, 0,65);
+    background: rgba(76, 255, 0, 0.65);
 }
