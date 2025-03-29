@@ -3,24 +3,29 @@
     <head>
         <meta charset="utf-8">
         <link href="../css/articles-style.css" rel="stylesheet" >
+        <style>
+            
+        </style>
     </head>
     <body>
         <header class="header">
+            <div class="container">
+            <img class="img" src="../images/html5_icon.png">
             <h2 style="text-align:center;" id="text">Смогу ли я сделать этот проект?</h2>
+            </div>
+            
             <nav class="nav">
-                <h2>&lt;&gt;</h2>
+                <h2>&lt;nav&gt;</h2>
                 <a href="#1">Ссылка 1</a>
                 <a href="#2">Ссылка 2</a>
                 <a href="#3">Ссылка 3</a>
             </nav>
         </header>
-        <br/><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br>
         <main class="main">
-            <h2>&lt;main&gt;</h2>
-            <section id="1">
-                <div class="areacode-images">
+            <section>
+                <h2 id="1">&lt;main&gt;</h2>
+                <p>Это пример области с кодом в которой вместо изображения находится код со стилем</p>
+                <div class="area_code-images">
                     <div>
                         <p>margin</p>
                         <div>
@@ -36,17 +41,43 @@
                 </div>
             </section>
                 
-            <section id="2">
-
+            <section >
+                <h3 id="2">Мнемоники</h3>
+                <table class="table">
+                    <tr>
+                        <td>Символ</td><td>Значение</td><td>Мнемоника</td>
+                    </tr>
+                    <tr>
+                        <td>&amp;</td><td>Амперсант</td><td>&amp;amp;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td><td>Открывающая<br>скобка</td><td>&amp;lt;</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td><td>Закрывающая<br>скобка</td><td>&amp;gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&copy;</td><td>Копирайт</td><td>&amp;copy;</td>
+                    </tr>
+                    <tr>
+                        <td>&commat;</td><td>Комерческое at</td><td>&amp;commat;</td>
+                    </tr>
+                </table>
             </section>
             
-            <section id="3">
-
+            <section>
+                <h3 id="3">Ограничения</h3>
+                <p>Нужно допускать как можно меньше оригинальности чтоб меньше было прописывать Css в &lt;style&gt;.</p>
+                <P>Примеры ограничений:<br>
+                Псевдоклассы используются инвидуально поэтому не входят в стандарт, и могут занимать много места в Css.<br>
+                
+                </P>
             </section>
         </main>
         <footer class="footer">
             <h2>&lt;footer&gt;</h2>
-
+            <p>&copy; Nik, 2025</p>
+            <p>&commat;Имя соавтора</p>
         </footer>
 
         <!-- <script src="../js/main2.js"></script> -->
