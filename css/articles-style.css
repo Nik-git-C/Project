@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .header {
@@ -23,17 +24,17 @@ p {
     margin-bottom:5px;
 }
 
-.areacode-images {
+.area_code-images {
     background: white;
     border-style: inset;
-    height: 400px;
+    height: 200px;
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     >div {
-        border: 2px dotted;
+        border: 2px dashed;
         background: #f9cc9d;
         height: 160px;
         width: 300px;
@@ -45,7 +46,7 @@ p {
             height: 100px;
             width: 250px;
             >div {
-                border: 2px dotted;
+                border: 2px dashed;
                 margin: 0;
                 margin-left: 25px;
                 background: #c3d08b;
@@ -61,4 +62,27 @@ p {
             }
         }
     }
+}
+
+.table {
+    border: 1px solid;
+    td {
+        border: 1px solid;
+    }
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img {
+    height: 200px;
+    width: 200px;
 }
