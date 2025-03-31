@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Стандарт №1</title>
         <meta charset="utf-8">
         <link href="../css/articles-style.css" rel="stylesheet" >
         <style>
-            
+            .area_code-images {
+    width: 400px;
+    background: white;
+    border-style: inset;
+    height: 200px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    >div {
+        border: 2px dashed;
+        background: #f9cc9d;
+        height: 160px;
+        width: 300px;
+        >div {
+            border: 1px solid;
+            margin: 0;
+            margin-left: 25px;
+            background: #fddd9b;
+            height: 100px;
+            width: 250px;
+            >div {
+                border: 2px dashed;
+                margin: 0;
+                margin-left: 25px;
+                background: #c3d08b;
+                width: 200px;
+                height: 60px;
+                >div {
+                    border: 1px solid;
+                    margin: 0;
+                    margin-left: 25px;
+                    background: #8cb6c0;
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
         </style>
     </head>
     <body>
-        <header class="header">
+        <header>
             <div class="container">
-            <img class="img" src="../images/html5_icon.png">
-            <h2 style="text-align:center;" id="text">Смогу ли я сделать этот проект?</h2>
+                <div class="icon">
+                    <img class="img" src="../images/html5_icon.png">
+                    <h2 style="text-align:center;" id="text">Стандарт №1</h2>
+                </div>
+                <div class="head-add_info"> <!-- не является частью стандарта -->
+                    <p><span>Данный<br>стандарт является<br>недоделанным</span></p>
+                </div>
             </div>
             
             <nav class="nav">
@@ -21,10 +66,14 @@
                 <a href="#3">Ссылка 3</a>
             </nav>
         </header>
-        <main class="main">
+        <main>
             <section>
                 <h2 id="1">&lt;main&gt;</h2>
-                <p>Это пример области с кодом в которой вместо изображения находится код со стилем</p>
+                <p>Это пример <span>области с кодом</span>, в которой вместо изображения находится код со стилем</p>
+                <aside>
+                    <img class="img" src="../images/css_icon.png" alt="">
+                    <p>Css это Cascading Style Sheets</p>
+                </aside>
                 <div class="area_code-images">
                     <div>
                         <p>margin</p>
@@ -41,11 +90,11 @@
                 </div>
             </section>
                 
-            <section >
+            <section class="Mnemonics">
                 <h3 id="2">Мнемоники</h3>
                 <table class="table">
                     <tr>
-                        <td>Символ</td><td>Значение</td><td>Мнемоника</td>
+                        <th>Символ</th><th>Значение</th><th>Мнемоника</th>
                     </tr>
                     <tr>
                         <td>&amp;</td><td>Амперсант</td><td>&amp;amp;</td>
@@ -65,19 +114,27 @@
                 </table>
             </section>
             
-            <section>
+            <section class="Rules">
                 <h3 id="3">Ограничения</h3>
-                <p>Нужно допускать как можно меньше оригинальности чтоб меньше было прописывать Css в &lt;style&gt;.</p>
-                <P>Примеры ограничений:<br>
-                Псевдоклассы используются инвидуально поэтому не входят в стандарт, и могут занимать много места в Css.<br>
-                
-                </P>
+                <p>Нужно допускать как можно <span>меньше оригинальности</span> чтоб меньше было прописывать Css в &lt;style&gt;.</p>
+                <P><span>Примеры ограничений:</span><br>
+                Псевдоклассы используются инвидуально поэтому не входят в стандарт, и могут занимать много места в Css.<br></P>
+                <p></p>
             </section>
         </main>
-        <footer class="footer">
+        <footer>
             <h2>&lt;footer&gt;</h2>
-            <p>&copy; Nik, 2025</p>
-            <p>&commat;Имя соавтора</p>
+            <div class="footer-info">
+                <div class="info-authors">
+                    <p>&copy; Nik, 2025</p>
+                    <p>&commat;Имя соавтора</p>
+                </div>
+                <div class="info-article">
+                    <p>data:31.03.25</p>
+                    <p>v0.25.00</p>
+                </div>
+            </div>
+            
         </footer>
 
         <!-- <script src="../js/main2.js"></script> -->
