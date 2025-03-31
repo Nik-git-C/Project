@@ -1,22 +1,41 @@
+:root {
+    --accent-color:red;
+    --background-color:white;
+    --text-color:black;
+}
+
 body {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
 }
 
-.header {
+span {
+    color:var(--accent-color);
+}
+
+header {
     background: rgb(255, 106, 0, 0.65);
 }
 
-.nav {
+nav {
     background: rgb(255, 216, 0, 0.65);
+    width: 400px;
 }
 
-.main {
+main {
     background: rgb(76, 255, 0, 0.65);
 }
 
-.footer {
+footer {
     background: rgba(0, 238, 255, 0.65);
+}
+
+aside {
+    float:right;
+    border-style: inset;
+    height: 200px;
+    width: 200px;
 }
 
 p {
@@ -24,48 +43,11 @@ p {
     margin-bottom:5px;
 }
 
-.area_code-images {
-    background: white;
-    border-style: inset;
-    height: 200px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    >div {
-        border: 2px dashed;
-        background: #f9cc9d;
-        height: 160px;
-        width: 300px;
-        >div {
-            border: 1px solid;
-            margin: 0;
-            margin-left: 25px;
-            background: #fddd9b;
-            height: 100px;
-            width: 250px;
-            >div {
-                border: 2px dashed;
-                margin: 0;
-                margin-left: 25px;
-                background: #c3d08b;
-                width: 200px;
-                height: 60px;
-                >div {
-                    border: 1px solid;
-                    margin: 0;
-                    margin-left: 25px;
-                    background: #8cb6c0;
-                    width: 150px;
-                }
-            }
-        }
-    }
-}
-
 .table {
     border: 1px solid;
+    th {
+        border: 1px solid;
+    }
     td {
         border: 1px solid;
     }
@@ -78,11 +60,15 @@ h2 {
 
 .container {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
 }
 
 .img {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
 }
