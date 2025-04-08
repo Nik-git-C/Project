@@ -17,15 +17,6 @@ const button6 = document.querySelector('#id6')
 const button7 = document.querySelector('#id7')
 const button8 = document.querySelector('#id8')
 
-// button.addEventListener('click', () => {
-//   element4.style.display = 'none'
-//   element3.style.display = 'none'
-//   element2.style.display = 'none'
-
-//   element.style.width = '99.7VW'
-//   element.style.height = '93VH'
-// })
-
 const setElementBtn1Styles = (element, styles) => {
   Object.assign(element.style, styles)
 }
@@ -41,16 +32,6 @@ button.addEventListener('click', () => {
   setElementBtn1Styles(element, { width: '99.7VW', height: '93VH' })
 })
 
-// button2.addEventListener('click', () => {
-//   element.style.width = '49VW'
-//   element.style.height = '93VH'
-
-//   element2.style.display = 'inline-block'
-//   element2.style.height = '93VH'
-//   element4.style.display = 'none'
-//   element3.style.display = 'none'
-// })
-
 const setElementBtn2Styles = (element, styles) => {
   Object.assign(element.style, styles)
 }
@@ -62,20 +43,6 @@ button2.addEventListener('click', () => {
   setElementBtn2Styles(element4, { display: 'none' })
 })
 
-// button3.addEventListener('click', () => {
-//   element.style.height = '45Vh'
-//   element.style.width = '49.5VW'
-//   element2.style.display = 'inline-block'
-//   element2.style.height = '45Vh'
-//   element2.style.width = '49.5VW'
-
-//   element3.style.display = 'inline-block'
-//   element3.style.height = '45Vh'
-//   element3.style.width = '99.7VW'
-
-//   element4.style.display = 'none'
-// })
-
 const setElementBtn3Styles = (element, styles) => {
   Object.assign(element.style, styles)
 }
@@ -86,24 +53,6 @@ button3.addEventListener('click', () => {
   setElementBtn3Styles(element3, { display: 'inline-block', height: '45Vh', width: '99.7VW' })
   setElementBtn3Styles(element4, { display: 'none' })
 })
-
-// button4.addEventListener('click', () => {
-//   element.style.width = '49.6VW'
-//   element.style.height = '45Vh'
-
-//   element2.style.height = '45Vh'
-//   element2.style.width = '49.6VW'
-//   element2.style.display = 'inline-block'
-
-//   element3.style.height = '45Vh'
-//   element3.style.width = '49.6VW'
-//   element3.style.display = 'inline-block'
-
-//   element4.style.height = '45Vh'
-//   element4.style.width = '49.6VW'
-//   element4.style.display = 'inline-block'
-//   console.log('Hello')
-// })
 
 const setElementBtn4Styles = (element) => {
   element.style.width = '49.6VW'
@@ -121,31 +70,6 @@ button4.addEventListener('click', () => {
 
 
 // Добавление обработчика событий к кнопкам
-
-// button5.addEventListener('click', () => {
-//   for (let i = 0; i < links.length; i++) {
-//     links[i].setAttribute('target', 'frame-main')
-//   }
-// })
-
-// button6.addEventListener('click', () => {
-//   for (let i = 0; i < links.length; i++) {
-//     links[i].setAttribute('target', 'frame-additional')
-//   }
-// })
-
-// button7.addEventListener('click', () => {
-//   for (let i = 0; i < links.length; i++) {
-//     links[i].setAttribute('target', 'frame-additional-top')
-//   }
-// })
-
-// button8.addEventListener('click', () => {
-//   for (let i = 0; i < links.length; i++) {
-//     links[i].setAttribute('target', 'frame-additional-topleft')
-//   }
-// })
-
 const buttonTargets = [
   { button: button5, target: 'frame-main' },
   { button: button6, target: 'frame-additional' },
