@@ -8,27 +8,16 @@ body {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
+    background: rgb(240, 240, 240);
 }
 
 span {
     color:var(--accent-color);
 }
 
-header {
-    background: rgb(255, 106, 0, 0.65);
-}
-
-nav {
-    background: rgb(255, 216, 0, 0.65);
-    width: 400px;
-}
-
-main {
-    background: rgb(76, 255, 0, 0.65);
-}
-
 footer {
-    background: rgba(0, 238, 255, 0.65);
+    background: var(--text-color);
+    color:var(--background-color);
 }
 
 aside {
@@ -36,6 +25,7 @@ aside {
     border-style: inset;
     height: 200px;
     width: 200px;
+    background-color: var(--background-color);
 }
 
 p {
@@ -61,6 +51,12 @@ h2 {
 .container {
     display: flex;
     justify-content: space-between;
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 .footer-info {
