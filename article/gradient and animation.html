@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/articles-style.css">
+    <title>Градиент и анимация</title>
+</head>
+<body>
+    <haeder>
+        <div class="container">
+            <div class="icon">
+                <img class="img" src="../images/html5_icon.png" alt="html5">
+                <h2>Работа с градиентами и анимациями</h2>
+            </div>
+        </div>
+        <nav>
+            <a href="#1">Градиент</a>
+            <a href="#2">Анимации</a>
+            <a href="#3"></a>
+        </nav>
+    </haeder>
+    <main>
+        <section>
+            <h2 id="1">Градиент</h2>
+            <h3>linear-gradient()</h3>
+            <code>
+                linear-gradient(to bottom, red,blue);
+            </code>
+            <p>Структура: linear-gradient((at/to) Направление,color1,color2)</p>
+            <hr>
+            <code>
+                linear-gradient(90deg, red, red 20px,blue 20px,blue 50px,orange 50px);
+            </code>
+            <p>Направление можно завать разными спосбами, если после цвета можно прописать где он находится в рахных единицах измерения</p>
+            <hr>
+            <h3>radial-gradient()</h3>
+            <code>
+                background: radial-gradient(at right,red,blue);
+            </code>
+            <p>Структура:radial-gradient((at/to) Направление,color1,color2); свойства такие же как и линейного градиента</p>
+            <hr>
+            <code>
+                background: radial-gradient(circle at 65% 15%,#fff,red);
+            </code>
+            <p></p>
+            <h3>repeating-radial-gradient()</h3>
+            <code>
+                background: repeating-radial-gradient(circle, red,red 20px, transparent 20px,transparent 40px);
+            </code>
+            <p></p>
+            <h3><span>ГРАДИЕНТ НЕЛЬЗЯ ПРИМЕНЯТЬ К border</span></h3>
+        </section>
+        <section>
+            <h2 id="2">Анимации</h2>
+            <h3>transition:</h3>
+            <p>transition: - уневерсальное собираетльное свойство которое включает в себя другие, для динамических изменений</p>
+            <code>
+                transition: 2s background steps(10);
+            </code>
+            <p>2s - время на выполнение, background - свойство которое изменяется постепенно, steps(количество) - прыжки или кадры</p>
+            <h3>animation:</h3>
+            <p>animation: - уневерсальное собираетльное свойство которое включает в себя другие, для изменений прописанные в @keyframes</p>
+            <code>
+                animation: color 6s infinite;<br>
+                @keyframes color {<br>
+                        0% {<br>
+                            border-color: red;<br>
+                            background: blue;<br>
+                        }<br>
+                        20% {<br>
+                            border-color: blue;<br>
+                            background: red;<br>
+                            border-radius: 100%;<br>
+                        }<br>
+                        40% {<br>
+                            border-color:orange;<br>
+                            background: green;<br>
+                            border-radius: 0;<br>
+                        }<br>
+                        60% {<br>
+                            border-color:red;<br>
+                            background: grey;<br>
+                            border-radius: 100%;<br>
+                        }<br>
+                        100% {<br>
+                            border-color:green;<br>
+                            background: black;<br>
+                            border-radius: 0;<br>
+                        }<br>
+                    }
+            </code>
+            <p>color - имя анимации, 6s - время анимации, infiniteм - анимация повторяется, @keyframes прописываются кадры которой следует анимация</p>
+        </section>
+        <section>
+            <h2 id="3"></h2>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <div class="info-authors">
+                <p>&copy; Nik, 2025</p>
+            </div>
+            <div class="info-article">
+                <p>data:17.04.25</p>
+                <p>v0.5.00</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
